@@ -69,7 +69,7 @@ p users["Erik"][:lottery_numbers]
 # 4. Get the type of Avril's pet Monty
 p "4"
 p users["Avril"][:pets][0][:species]
-
+p users["Avril"][:pets].select { |pet|  pet[:name] == "monty"}[0][:species]
 # 5. Get the smallest of Erik's lottery numbers
 p"5"
 p users["Erik"][:lottery_numbers].min()
