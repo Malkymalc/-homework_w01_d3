@@ -43,17 +43,16 @@ p stops.length
 # 8. How many ways can we return `"Falkirk High"` from the array?
 p "8"
 p stops[2]
-p stops.pop()
 
 p stops.select { |stop|  stop == "Falkirk High"}[0]
 p stops.slice(stops.find_index("Falkirk High"))
-p stops.slice!(stops.find_index("Falkirk High"))
+p stops.slice(stops.find_index("Falkirk High"))
 p stops.values_at(stops.find_index("Falkirk High"))[0]
 
 # 9. Reverse the positions of the stops in the array
 p "9"
 p stops
-stops.reverse()
+stops.reverse!()
 p stops
 
 # 10. Print out all the stops using a for loop

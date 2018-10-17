@@ -45,12 +45,12 @@ end
 
 # 4. Use a loop to find the total population of the UK.
 p "4"
-def get_total_population
+def get_total_population(country_collection)
   total_population = 0
-  for country in united_kingdom
+  for country in country_collection
     total_population += country[:population]
   end
-  return total_population
+  return "Total population: #{total_population}"
 end
 
 p get_total_population(united_kingdom)

@@ -96,7 +96,7 @@ p "9"
 p users["Erik"][:pets]
 
 users["Erik"][:pets].push({name: "Fluffy",species: "dog"})
-
+p "now..."
 p users["Erik"][:pets]
 
 # 10. Add another person to the users hash
@@ -114,7 +114,7 @@ users["Bob"] = {
     }
   ]
 }
-
+p "now..."
 p users
 
 
